@@ -10,7 +10,11 @@
 
 sudo apt-get install python2.7;sudo apt-get install python-pip;sudo pip install redis;sudo pip install pip --upgrade;sudo pip install pyTelegramBotAPI;sudo python up*
 
+git clone https://github.com/TGlandTeam/uploader
 
+cd uploader 
+
+python uploader.py
 دوم:
 
 برید تو بوت بزنید
