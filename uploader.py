@@ -1,4 +1,4 @@
-# Uploader Bot By @MosyDev
+# Uploader Bot By @EleGanceTM
 
 # -*- coding: utf-8 -*-
 import telebot
@@ -34,17 +34,17 @@ def m(m):
          print 'User: {} Start the bot!'.format(m.from_user.id)
          bot.send_message(m.chat.id,start_msg,parse_mode='Markdown')
 
-# Uploader Bot By @MosyDev
+# Uploader Bot By @EleGanceTM
 
 @bot.message_handler(commands=['stats'])
 def m(m):
-        if m.from_user.id == 224976780 or m.from_user.id == 211068405:
+        if m.from_user.id == 0 or m.from_user.id == 100096055:
           file = redis.scard('files')
           msm = redis.scard('memebers')
           em = redis.scard('msgs')
           bot.send_message(m.chat.id,'*Files Uploaded:* _{}_\n*Users:* _{}_\n*All Messages:* _{}_'.format(file,msm,em),parse_mode='Markdown')
 
-# Uploader Bot By @MosyDev
+# Uploader Bot By @EleGanceTM
 
 @bot.message_handler(content_types=['video','photo','sticker','document','audio','voice'])
 def all(m):
@@ -80,17 +80,17 @@ def all(m):
   except:
    bot.send_message(m.chat.id,link1)
 
-# Uploader Bot By @MosyDev
+# Uploader Bot By @EleGanceTM
 
 @bot.message_handler(commands=['rate'])
 def rate(m):
       markup = types.InlineKeyboardMarkup()
-      rate = types.InlineKeyboardButton('Rate',url='https://telegram.me/storebot?start=FUPRoBot')
+      rate = types.InlineKeyboardButton('Rate',url='https://telegram.me/EleGanceTM')
       markup.add(rate)
-      bot.send_message(m.chat.id,'If you like me, please give 5 star rating at: https://telegram.me/storebot?start=FUPRoBot\nYou can also recommend me @FUPRoBot to your friends.\nHave a nice day!',reply_markup=markup)
+      bot.send_message(m.chat.id,'If you like me, please join to channel: @EleGanceTM\nYou can also recommend me to your friends.\nHave a nice day!',reply_markup=markup)
 
-# Uploader Bot By @MosyDev
-# Uploader Bot By @MosyDev
-# Uploader Bot By @MosyDev
+# Uploader Bot By @EleGanceTM
+# Uploader Bot By @EleGanceTM
+# Uploader Bot By @EleGanceTM
 
 bot.polling(True)
